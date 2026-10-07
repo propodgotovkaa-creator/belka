@@ -1,0 +1,891 @@
+{
+  "version": 1,
+  "purpose": "Graphics approval pack, not a playable game",
+  "coordinateSystem": {
+    "world": "x from left, height from ground upward",
+    "source": "PNG pixels: x right, y down",
+    "screen": "1600x900, screenY=900-height+cameraBottom"
+  },
+  "viewport": {
+    "width": 1600,
+    "height": 900
+  },
+  "world": {
+    "width": 1600,
+    "height": 5600,
+    "trunkX": 1060,
+    "treeHeight": 5350
+  },
+  "assets": {
+    "assets/branches/branches-atlas.png": {
+      "width": 1024,
+      "height": 1536,
+      "alpha": true,
+      "bytes": 2097746,
+      "sha256": "038006660f93e20ddabb28aa3119c476ece3678fa46e583c0880fd30993bfa03"
+    },
+    "assets/branches/needles-front.png": {
+      "width": 1774,
+      "height": 887,
+      "alpha": true,
+      "bytes": 1072746,
+      "sha256": "f7ff2b6eaeee1b99979e136f3e2b7a91b6005abd9842ea890bbae2ab718818de"
+    },
+    "assets/scene/forest-far.png": {
+      "width": 1672,
+      "height": 941,
+      "alpha": true,
+      "bytes": 1452386,
+      "sha256": "4a9e1d4e84ed4d3b600cb4c6f03ef3c428cfd7be41085a0a87acc7fe4b305b7c"
+    },
+    "assets/scene/forest-floor.png": {
+      "width": 2172,
+      "height": 724,
+      "alpha": true,
+      "bytes": 1512140,
+      "sha256": "ff8ab2a621a44026a49cf1894ec81108304438070b7e8a2d0dd05a638ed9045e"
+    },
+    "assets/scene/forest-near.png": {
+      "width": 1672,
+      "height": 941,
+      "alpha": true,
+      "bytes": 2166502,
+      "sha256": "bb8860f326919118a3bf4265894e7f1583de54554d2f154289a5d851a340f84c"
+    },
+    "assets/scene/sky.png": {
+      "width": 1672,
+      "height": 941,
+      "alpha": false,
+      "bytes": 1872274,
+      "sha256": "62cc958d486847527b067de37114e97a50285c28c1bcb98f127d4a92012b8c08"
+    },
+    "assets/scene/spruce-master.png": {
+      "width": 724,
+      "height": 2172,
+      "alpha": true,
+      "bytes": 2290761,
+      "sha256": "eb8e559fe0aa93ac53f3e17ec6b4f7f10b1dcb4f0aeae2d135525a248bc4980c"
+    },
+    "assets/squirrel/idle-atlas.png": {
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "bytes": 1071515,
+      "sha256": "885351253a8d90f1d3e0d9d17ed7f83a6f915910ed1cfde3942e293b75cb18ee"
+    },
+    "assets/squirrel/idle.png": {
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "bytes": 1506628,
+      "sha256": "494d94bbf8929437683aab11c114bb645db961a15c45cd23230d9237419f2e9e"
+    },
+    "assets/squirrel/jump-atlas.png": {
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "bytes": 1379746,
+      "sha256": "ed20ce9fb25492b6062f3c635d6505868acce5706151ff0fa911ce0b9ab8cc0b"
+    },
+    "assets/squirrel/wave-atlas.png": {
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "bytes": 1834695,
+      "sha256": "141b8ad846a11bbf2386398bfbb9fa1d4625b4d52dd6951d90269f00248bc412"
+    },
+    "assets/ui/card-frame.png": {
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "bytes": 1739891,
+      "sha256": "3bdc96ab876bea84240afd63ef7ae8804528beb5e603446b5c019c0187e3b91e"
+    },
+    "assets/ui/cone.png": {
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "bytes": 1091660,
+      "sha256": "b9e05fed12acf89342b34661e944f0dfac7ff3c65d091f5ce52fc358c247b415"
+    },
+    "assets/words/01-luna.png": {
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "bytes": 1833565,
+      "sha256": "0e2c224785d5d89f0b3d7f76a4c11d2a43f9535d4e33094280b947104557d933"
+    },
+    "assets/words/02-lupa.png": {
+      "width": 1263,
+      "height": 1246,
+      "alpha": true,
+      "bytes": 1293451,
+      "sha256": "cc891180705e19c637688a443d915dfed8824108f956e58edf2bd973cafd8e8a"
+    },
+    "assets/words/03-lopata.png": {
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "bytes": 704875,
+      "sha256": "29d77d1785d1386c86616a0a20429c3f9e58e845a2a9d34d0287d8cb625463ea"
+    },
+    "assets/words/04-lyzhi.png": {
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "bytes": 1072388,
+      "sha256": "27339cce9e233f77fc380f0ebe10027a5cc05fc7ae84a662b0e842c5a7b3d9bf"
+    },
+    "assets/words/05-los.png": {
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "bytes": 1748206,
+      "sha256": "dc1a6bc5ba579209c858bb097fa56dd346de20b7d800769ead36cd8f46a790b1"
+    },
+    "assets/words/06-lodka.png": {
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "bytes": 1758947,
+      "sha256": "bd8114de7a1426b7b3415876f39202c8d89516532297658e73bfbabe85d61b7b"
+    },
+    "assets/words/07-luk.png": {
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "bytes": 1456856,
+      "sha256": "f4c12ae6a3a8cf2e08a65d35385b8291954819fbd625a6f11855edb84cf25d96"
+    },
+    "assets/words/08-lapa.png": {
+      "width": 1305,
+      "height": 1206,
+      "alpha": true,
+      "bytes": 1993115,
+      "sha256": "b4060ecb413469244bb05e634ac48e5f79146c06e179660a0cc1b8fbacb640bf"
+    },
+    "assets/words/09-lampochka.png": {
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "bytes": 1044555,
+      "sha256": "8ef7086c796042ee30ecacabdb6567cabf14bbabdfc48c7e004709a1729f7745"
+    },
+    "assets/words/10-lama.png": {
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "bytes": 1168406,
+      "sha256": "cf929446fd0028474ae58b74bb5a72c776415fcf69013d69f87d7bf781975a8a"
+    }
+  },
+  "squirrel": {
+    "idle": {
+      "file": "assets/squirrel/idle-atlas.png",
+      "frames": {
+        "rest": {
+          "source": [
+            110,
+            105,
+            455,
+            440
+          ],
+          "anchor": [
+            155,
+            422
+          ],
+          "worldScale": 0.5
+        },
+        "blink": {
+          "source": [
+            735,
+            105,
+            455,
+            440
+          ],
+          "anchor": [
+            156,
+            422
+          ],
+          "worldScale": 0.5
+        },
+        "breathe-in": {
+          "source": [
+            110,
+            705,
+            460,
+            440
+          ],
+          "anchor": [
+            155,
+            422
+          ],
+          "worldScale": 0.5
+        },
+        "breathe-out": {
+          "source": [
+            735,
+            705,
+            460,
+            440
+          ],
+          "anchor": [
+            156,
+            422
+          ],
+          "worldScale": 0.5
+        }
+      },
+      "recommendedCycleMs": 5200,
+      "blinkDurationMs": 140
+    },
+    "jump": {
+      "file": "assets/squirrel/jump-atlas.png",
+      "frames": {
+        "crouch": {
+          "source": [
+            35,
+            145,
+            575,
+            420
+          ],
+          "anchor": [
+            257,
+            403
+          ],
+          "worldScale": 0.35
+        },
+        "takeoff": {
+          "source": [
+            660,
+            95,
+            585,
+            480
+          ],
+          "anchor": [
+            320,
+            325
+          ],
+          "worldScale": 0.35
+        },
+        "airborne": {
+          "source": [
+            30,
+            690,
+            600,
+            400
+          ],
+          "anchor": [
+            300,
+            255
+          ],
+          "worldScale": 0.35
+        },
+        "land": {
+          "source": [
+            660,
+            705,
+            575,
+            455
+          ],
+          "anchor": [
+            278,
+            430
+          ],
+          "worldScale": 0.35
+        }
+      },
+      "timingMs": {
+        "crouch": 250,
+        "flight": 1000,
+        "landing": 300
+      }
+    },
+    "wave": {
+      "file": "assets/squirrel/wave-atlas.png",
+      "frames": {
+        "front": {
+          "source": [
+            145,
+            15,
+            505,
+            610
+          ],
+          "anchor": [
+            183,
+            596
+          ],
+          "worldScale": 0.35
+        },
+        "raise": {
+          "source": [
+            690,
+            15,
+            510,
+            610
+          ],
+          "anchor": [
+            184,
+            596
+          ],
+          "worldScale": 0.35
+        },
+        "out": {
+          "source": [
+            145,
+            620,
+            505,
+            610
+          ],
+          "anchor": [
+            183,
+            592
+          ],
+          "worldScale": 0.35
+        },
+        "in": {
+          "source": [
+            690,
+            620,
+            510,
+            610
+          ],
+          "anchor": [
+            184,
+            592
+          ],
+          "worldScale": 0.35
+        }
+      },
+      "frameMs": 360
+    }
+  },
+  "branchVariants": {
+    "lower-left": {
+      "file": "assets/branches/branches-atlas.png",
+      "source": [
+        0,
+        120,
+        525,
+        505
+      ],
+      "pivot": [
+        495,
+        233
+      ],
+      "landing": [
+        180,
+        145
+      ]
+    },
+    "lower-right": {
+      "file": "assets/branches/branches-atlas.png",
+      "source": [
+        535,
+        110,
+        489,
+        515
+      ],
+      "pivot": [
+        30,
+        250
+      ],
+      "landing": [
+        323,
+        155
+      ]
+    },
+    "middle-left": {
+      "file": "assets/branches/branches-atlas.png",
+      "source": [
+        0,
+        670,
+        530,
+        405
+      ],
+      "pivot": [
+        493,
+        147
+      ],
+      "landing": [
+        185,
+        108
+      ]
+    },
+    "middle-right": {
+      "file": "assets/branches/branches-atlas.png",
+      "source": [
+        540,
+        670,
+        484,
+        410
+      ],
+      "pivot": [
+        39,
+        157
+      ],
+      "landing": [
+        310,
+        130
+      ]
+    },
+    "upper-left": {
+      "file": "assets/branches/branches-atlas.png",
+      "source": [
+        30,
+        1090,
+        490,
+        325
+      ],
+      "pivot": [
+        449,
+        184
+      ],
+      "landing": [
+        190,
+        120
+      ]
+    },
+    "upper-right": {
+      "file": "assets/branches/branches-atlas.png",
+      "source": [
+        550,
+        1090,
+        450,
+        335
+      ],
+      "pivot": [
+        42,
+        183
+      ],
+      "landing": [
+        290,
+        122
+      ]
+    }
+  },
+  "stops": [
+    {
+      "id": 0,
+      "landingX": 1250,
+      "height": 260,
+      "cameraBottom": 0,
+      "branch": "lower-right",
+      "branchScale": 0.64846,
+      "rootX": 1060,
+      "rootHeight": 198.396,
+      "cone": false
+    },
+    {
+      "id": 1,
+      "landingX": 800,
+      "height": 720,
+      "cameraBottom": 460,
+      "branch": "lower-left",
+      "branchScale": 0.8254,
+      "rootX": 1060,
+      "rootHeight": 647.365,
+      "cone": true,
+      "taskId": 1
+    },
+    {
+      "id": 2,
+      "landingX": 1310,
+      "height": 1180,
+      "cameraBottom": 920,
+      "branch": "lower-right",
+      "branchScale": 0.85324,
+      "rootX": 1060,
+      "rootHeight": 1098.942,
+      "cone": true,
+      "taskId": 2
+    },
+    {
+      "id": 3,
+      "landingX": 840,
+      "height": 1640,
+      "cameraBottom": 1380,
+      "branch": "lower-left",
+      "branchScale": 0.69841,
+      "rootX": 1060,
+      "rootHeight": 1578.54,
+      "cone": true,
+      "taskId": 3
+    },
+    {
+      "id": 4,
+      "landingX": 1270,
+      "height": 2100,
+      "cameraBottom": 1840,
+      "branch": "middle-right",
+      "branchScale": 0.77491,
+      "rootX": 1060,
+      "rootHeight": 2079.077,
+      "cone": true,
+      "taskId": 4
+    },
+    {
+      "id": 5,
+      "landingX": 865,
+      "height": 2560,
+      "cameraBottom": 2300,
+      "branch": "middle-left",
+      "branchScale": 0.63312,
+      "rootX": 1060,
+      "rootHeight": 2535.308,
+      "cone": true,
+      "taskId": 5
+    },
+    {
+      "id": 6,
+      "landingX": 1235,
+      "height": 3020,
+      "cameraBottom": 2760,
+      "branch": "middle-right",
+      "branchScale": 0.64576,
+      "rootX": 1060,
+      "rootHeight": 3002.565,
+      "cone": true,
+      "taskId": 6
+    },
+    {
+      "id": 7,
+      "landingX": 910,
+      "height": 3480,
+      "cameraBottom": 3220,
+      "branch": "middle-left",
+      "branchScale": 0.48701,
+      "rootX": 1060,
+      "rootHeight": 3461.006,
+      "cone": true,
+      "taskId": 7
+    },
+    {
+      "id": 8,
+      "landingX": 1200,
+      "height": 3940,
+      "cameraBottom": 3680,
+      "branch": "upper-right",
+      "branchScale": 0.56452,
+      "rootX": 1060,
+      "rootHeight": 3905.565,
+      "cone": true,
+      "taskId": 8
+    },
+    {
+      "id": 9,
+      "landingX": 965,
+      "height": 4400,
+      "cameraBottom": 4140,
+      "branch": "upper-left",
+      "branchScale": 0.3668,
+      "rootX": 1060,
+      "rootHeight": 4376.525,
+      "cone": true,
+      "taskId": 9
+    },
+    {
+      "id": 10,
+      "landingX": 1145,
+      "height": 4860,
+      "cameraBottom": 4600,
+      "branch": "upper-right",
+      "branchScale": 0.34274,
+      "rootX": 1060,
+      "rootHeight": 4839.093,
+      "cone": true,
+      "taskId": 10
+    }
+  ],
+  "tree": {
+    "file": "assets/scene/spruce-master.png",
+    "x": 360,
+    "bottom": 0,
+    "width": 1400,
+    "height": 5350,
+    "note": "One continuous source. Five virtual slices use the same image; do not independently rescale or paint seams. Preview uses intentional mild vertical elongation for world proportions.",
+    "regions": [
+      {
+        "id": 0,
+        "source": [
+          0,
+          0,
+          724,
+          434
+        ],
+        "order": "top-to-bottom"
+      },
+      {
+        "id": 1,
+        "source": [
+          0,
+          434,
+          724,
+          435
+        ],
+        "order": "top-to-bottom"
+      },
+      {
+        "id": 2,
+        "source": [
+          0,
+          869,
+          724,
+          434
+        ],
+        "order": "top-to-bottom"
+      },
+      {
+        "id": 3,
+        "source": [
+          0,
+          1303,
+          724,
+          435
+        ],
+        "order": "top-to-bottom"
+      },
+      {
+        "id": 4,
+        "source": [
+          0,
+          1738,
+          724,
+          434
+        ],
+        "order": "top-to-bottom"
+      }
+    ]
+  },
+  "layers": [
+    "sky",
+    "forest-far",
+    "forest-near",
+    "spruce-master",
+    "animated-branch",
+    "cone",
+    "squirrel",
+    "needles-front",
+    "forest-floor",
+    "card"
+  ],
+  "camera": {
+    "initialBottom": 0,
+    "finalBottom": 4600,
+    "followAfterLanding": true,
+    "moveMs": 1500,
+    "easing": "smoothstep",
+    "visibleNextCones": 1
+  },
+  "landingMotion": {
+    "durationMs": 850,
+    "maxAngleDeg": 2.5,
+    "oscillations": 2,
+    "squirrelParent": "same branch group",
+    "pivot": "branchVariants.*.pivot"
+  },
+  "card": {
+    "file": "assets/ui/card-frame.png",
+    "screenRect": [
+      45,
+      260,
+      460,
+      460
+    ],
+    "contentInsetFraction": 0.13,
+    "wordImages": [
+      "assets/words/01-luna.png",
+      "assets/words/02-lupa.png",
+      "assets/words/03-lopata.png",
+      "assets/words/04-lyzhi.png",
+      "assets/words/05-los.png",
+      "assets/words/06-lodka.png",
+      "assets/words/07-luk.png",
+      "assets/words/08-lapa.png",
+      "assets/words/09-lampochka.png",
+      "assets/words/10-lama.png"
+    ],
+    "imageRect": [
+      115,
+      330,
+      320,
+      320
+    ]
+  },
+  "background": {
+    "sky": "screen-filling at every camera position",
+    "forestFar": "screen rect [0, 80 + cameraBottom*0.07, 1600, 900]",
+    "forestNear": "screen rect [0, 0 + cameraBottom*0.5, 1600, 1000], fades with altitude",
+    "floor": "world base only"
+  },
+  "tasks": [
+    {
+      "id": 1,
+      "word": "луна",
+      "file": "assets/words/01-luna.png",
+      "source": [
+        93,
+        99,
+        1069,
+        1072
+      ],
+      "triggerCone": 1,
+      "fromStop": 0,
+      "toStop": 1,
+      "showBeforeJump": true,
+      "caption": null
+    },
+    {
+      "id": 2,
+      "word": "лупа",
+      "file": "assets/words/02-lupa.png",
+      "source": [
+        105,
+        63,
+        1133,
+        1129
+      ],
+      "triggerCone": 2,
+      "fromStop": 1,
+      "toStop": 2,
+      "showBeforeJump": true,
+      "caption": null
+    },
+    {
+      "id": 3,
+      "word": "лопата",
+      "file": "assets/words/03-lopata.png",
+      "source": [
+        245,
+        22,
+        915,
+        1207
+      ],
+      "triggerCone": 3,
+      "fromStop": 2,
+      "toStop": 3,
+      "showBeforeJump": true,
+      "caption": null
+    },
+    {
+      "id": 4,
+      "word": "лыжи",
+      "file": "assets/words/04-lyzhi.png",
+      "source": [
+        39,
+        39,
+        1197,
+        1191
+      ],
+      "triggerCone": 4,
+      "fromStop": 3,
+      "toStop": 4,
+      "showBeforeJump": true,
+      "caption": null
+    },
+    {
+      "id": 5,
+      "word": "лось",
+      "file": "assets/words/05-los.png",
+      "source": [
+        24,
+        19,
+        1205,
+        1213
+      ],
+      "triggerCone": 5,
+      "fromStop": 4,
+      "toStop": 5,
+      "showBeforeJump": true,
+      "caption": null
+    },
+    {
+      "id": 6,
+      "word": "лодка",
+      "file": "assets/words/06-lodka.png",
+      "source": [
+        52,
+        183,
+        1186,
+        939
+      ],
+      "triggerCone": 6,
+      "fromStop": 5,
+      "toStop": 6,
+      "showBeforeJump": true,
+      "caption": null
+    },
+    {
+      "id": 7,
+      "word": "лук",
+      "file": "assets/words/07-luk.png",
+      "source": [
+        203,
+        41,
+        862,
+        1180
+      ],
+      "triggerCone": 7,
+      "fromStop": 6,
+      "toStop": 7,
+      "showBeforeJump": true,
+      "caption": null,
+      "depiction": "репчатый лук"
+    },
+    {
+      "id": 8,
+      "word": "лапа",
+      "file": "assets/words/08-lapa.png",
+      "source": [
+        229,
+        61,
+        879,
+        1135
+      ],
+      "triggerCone": 8,
+      "fromStop": 7,
+      "toStop": 8,
+      "showBeforeJump": true,
+      "caption": null,
+      "depiction": "кошачья лапа"
+    },
+    {
+      "id": 9,
+      "word": "лампочка",
+      "file": "assets/words/09-lampochka.png",
+      "source": [
+        280,
+        85,
+        694,
+        1098
+      ],
+      "triggerCone": 9,
+      "fromStop": 8,
+      "toStop": 9,
+      "showBeforeJump": true,
+      "caption": null
+    },
+    {
+      "id": 10,
+      "word": "лама",
+      "file": "assets/words/10-lama.png",
+      "source": [
+        266,
+        11,
+        818,
+        1225
+      ],
+      "triggerCone": 10,
+      "fromStop": 9,
+      "toStop": 10,
+      "showBeforeJump": true,
+      "caption": null
+    }
+  ],
+  "taskFlow": {
+    "onActiveConeClick": "show tasks[coneId-1].file in the fixed screen card, replacing previous image",
+    "caption": false,
+    "pauseBeforeJumpMs": 4000,
+    "then": "jump from fromStop to toStop; remove used cone on landing; move camera; enable next cone"
+  }
+}

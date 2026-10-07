@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Белочка и ель — просмотр графики</title>
+<style>
+.word-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:15px}.word-card{display:block;aspect-ratio:1;background:url('assets/ui/card-frame.png') center/contain no-repeat}.word-card img{width:100%;height:100%;object-fit:contain;padding:17%}select{font:inherit;padding:9px 12px;border:1px solid #b9c4af;border-radius:12px;background:#fffdf6;color:#40563e}@media(max-width:700px){.word-grid{grid-template-columns:repeat(2,1fr)}}
+:root{font-family:system-ui,sans-serif;color:#3d5147;background:#f6f5ec}*{box-sizing:border-box}body{margin:0}main{max-width:1280px;margin:auto;padding:32px 24px 60px}h1{font-family:Georgia,serif;font-size:clamp(27px,4vw,42px);font-weight:normal;margin:8px 0 12px}h2{font-family:Georgia,serif;font-weight:normal;font-size:27px;margin-top:36px}p{line-height:1.6;max-width:880px}.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#76866d}.note{color:#687668;font-size:14px}.scene{width:100%;aspect-ratio:16/9;background:#e8eee7;border-radius:20px;display:block;box-shadow:0 12px 40px #3d514711}.controls{display:flex;align-items:center;flex-wrap:wrap;gap:16px;margin:18px 0}input[type=range]{width:min(420px,70vw);accent-color:#738568}button,a.button{background:#61765e;color:white;border:0;padding:11px 17px;border-radius:24px;text-decoration:none;cursor:pointer;font:inherit}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #b99759;outline-offset:4px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.tile{background:#edf0e4;border:1px solid #dbe1d3;border-radius:18px;overflow:hidden}.tile canvas{width:100%;height:auto;display:block}.tile h3{font-weight:500;margin:0 20px 10px}.tile p{font-size:14px;margin:0 20px 20px;color:#687668}.files{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.asset{background:#fffdf6;border:1px solid #dbe1d3;border-radius:14px;padding:12px;min-width:0}.asset img{width:100%;height:170px;object-fit:contain;background-color:#eef0e9;background-image:linear-gradient(45deg,#e1e5d9 25%,transparent 25%),linear-gradient(-45deg,#e1e5d9 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#e1e5d9 75%),linear-gradient(-45deg,transparent 75%,#e1e5d9 75%);background-size:20px 20px;background-position:0 0,0 10px,10px -10px,-10px 0}.asset a{color:#526e50;display:block;overflow-wrap:anywhere;font-size:12px;margin-top:8px}.asset small{display:block;margin-top:5px;color:#7a8575}.status{font-size:13px;color:#75806e}footer{border-top:1px solid #dce2d6;margin-top:35px;padding-top:20px;font-size:13px;color:#6e7d6a}@media(max-width:700px){main{padding:20px 12px}.grid{grid-template-columns:1fr}.files{grid-template-columns:repeat(2,1fr)}}
+</style>
+<main>
+<div class="eyebrow">Комплект графики · второй стиль</div>
+<h1>Белочка поднимается по ели</h1>
+<p>Нежная детская иллюстрация. Здесь можно проверить прозрачные слои, расположение веток, движения белочки и десять картинок на звук Л. Это просмотр материалов для согласования; игровая механика ещё не добавлена.</p>
+<p id="status" class="status" role="status">Загружаются изображения…</p>
+<canvas id="scene" class="scene" width="1600" height="900" aria-label="Просмотр сцены с елью, белочкой и пустой карточкой"></canvas>
+<div class="controls"><label for="height">Высота сцены</label><input id="height" type="range" min="0" max="10" value="0" step="1"><output id="heightLabel">Основание</output><button id="pause" type="button">Остановить движения</button></div>
+<div class="controls"><label for="word">Картинка для просмотра</label><select id="word"><option value="-1">Пустая карточка</option></select></div>
+<p class="note">Ползунок и подписи — инструменты просмотра графики. В интерфейс игры они не входят. Одна ель непрерывно проходит через все уровни; её верхушка видна в последнем положении.</p>
+<h2>Десять картинок на звук Л</h2>
+<p class="note">Луна, лупа, лопата, лыжи, лось, лодка, лук, лапа, лампочка, лама. В этом порядке картинки связаны с десятью шишками в манифесте. На самих карточках подписей нет. Нажмите на картинку ниже, чтобы скачать её PNG.</p>
+<div id="words" class="word-grid"></div>
+<h2>Белочка живая</h2>
+<div class="grid">
+<section class="tile"><canvas id="idle" width="520" height="360" aria-label="Белочка дышит и моргает"></canvas><h3>Спокойная поза</h3><p>Моргание, мягкое дыхание и небольшое движение хвоста.</p></section>
+<section class="tile"><canvas id="jump" width="520" height="360" aria-label="Подготовка, прыжок по дуге и посадка"></canvas><h3>Прыжок и посадка</h3><p>Приседание, видимая дуга и мягкое покачивание опоры после посадки.</p></section>
+<section class="tile"><canvas id="wave" width="520" height="360" aria-label="Белочка машет лапкой"></canvas><h3>Приветствие</h3><p>Поворот к зрителю и несколько положений поднятой лапки.</p></section>
+</div>
+<h2>Файлы графики</h2><p class="note">PNG сохраняют прозрачность. Атласы содержат несколько кадров; точные области, точки опоры и масштабы записаны в <a href="scene-manifest.json">scene-manifest.json</a>. В браузере они уже используются ниже и выше.</p>
+<div id="files" class="files"></div>
+<footer>Изображения созданы через встроенный imagegen. Порядок картинок: <a href="word-cards.json">word-cards.json</a>. Полное описание комплекта и загрузки: <a href="README.md">README.md</a>.</footer>
+</main>
+<script src="manifest.js"></script><script src="preview.js"></script>
+</html>

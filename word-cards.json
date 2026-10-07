@@ -1,0 +1,167 @@
+{
+  "title": "Л в начале слова",
+  "tasks": [
+    {
+      "id": 1,
+      "word": "луна",
+      "file": "assets/words/01-luna.png",
+      "source": [
+        93,
+        99,
+        1069,
+        1072
+      ],
+      "triggerCone": 1,
+      "fromStop": 0,
+      "toStop": 1,
+      "showBeforeJump": true,
+      "caption": null
+    },
+    {
+      "id": 2,
+      "word": "лупа",
+      "file": "assets/words/02-lupa.png",
+      "source": [
+        105,
+        63,
+        1133,
+        1129
+      ],
+      "triggerCone": 2,
+      "fromStop": 1,
+      "toStop": 2,
+      "showBeforeJump": true,
+      "caption": null
+    },
+    {
+      "id": 3,
+      "word": "лопата",
+      "file": "assets/words/03-lopata.png",
+      "source": [
+        245,
+        22,
+        915,
+        1207
+      ],
+      "triggerCone": 3,
+      "fromStop": 2,
+      "toStop": 3,
+      "showBeforeJump": true,
+      "caption": null
+    },
+    {
+      "id": 4,
+      "word": "лыжи",
+      "file": "assets/words/04-lyzhi.png",
+      "source": [
+        39,
+        39,
+        1197,
+        1191
+      ],
+      "triggerCone": 4,
+      "fromStop": 3,
+      "toStop": 4,
+      "showBeforeJump": true,
+      "caption": null
+    },
+    {
+      "id": 5,
+      "word": "лось",
+      "file": "assets/words/05-los.png",
+      "source": [
+        24,
+        19,
+        1205,
+        1213
+      ],
+      "triggerCone": 5,
+      "fromStop": 4,
+      "toStop": 5,
+      "showBeforeJump": true,
+      "caption": null
+    },
+    {
+      "id": 6,
+      "word": "лодка",
+      "file": "assets/words/06-lodka.png",
+      "source": [
+        52,
+        183,
+        1186,
+        939
+      ],
+      "triggerCone": 6,
+      "fromStop": 5,
+      "toStop": 6,
+      "showBeforeJump": true,
+      "caption": null
+    },
+    {
+      "id": 7,
+      "word": "лук",
+      "file": "assets/words/07-luk.png",
+      "source": [
+        203,
+        41,
+        862,
+        1180
+      ],
+      "triggerCone": 7,
+      "fromStop": 6,
+      "toStop": 7,
+      "showBeforeJump": true,
+      "caption": null,
+      "depiction": "репчатый лук"
+    },
+    {
+      "id": 8,
+      "word": "лапа",
+      "file": "assets/words/08-lapa.png",
+      "source": [
+        229,
+        61,
+        879,
+        1135
+      ],
+      "triggerCone": 8,
+      "fromStop": 7,
+      "toStop": 8,
+      "showBeforeJump": true,
+      "caption": null,
+      "depiction": "кошачья лапа"
+    },
+    {
+      "id": 9,
+      "word": "лампочка",
+      "file": "assets/words/09-lampochka.png",
+      "source": [
+        280,
+        85,
+        694,
+        1098
+      ],
+      "triggerCone": 9,
+      "fromStop": 8,
+      "toStop": 9,
+      "showBeforeJump": true,
+      "caption": null
+    },
+    {
+      "id": 10,
+      "word": "лама",
+      "file": "assets/words/10-lama.png",
+      "source": [
+        266,
+        11,
+        818,
+        1225
+      ],
+      "triggerCone": 10,
+      "fromStop": 9,
+      "toStop": 10,
+      "showBeforeJump": true,
+      "caption": null
+    }
+  ]
+}
